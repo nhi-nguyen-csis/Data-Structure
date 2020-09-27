@@ -1,3 +1,4 @@
+# ***************************** LEETCODE 2 *****************************
 """
 Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i < j.
@@ -21,6 +22,7 @@ def numGoodPairs(l):
 nums = [1,2,3,1,1,3]
 print(numGoodPairs(nums))
 
+# ***************************** LEETCODE 3 *****************************
 
 """
 Given an array nums. We define a running sum of an
@@ -46,6 +48,7 @@ def runningSum(num):
 nums = [1,1,1,1,1]
 print(runningSum(nums))
 
+# ***************************** LEETCODE 4 *****************************
 # Given a string, write a function to check if the string is
 # a palindrome. example: "My gym"
 # * coding interview book question
