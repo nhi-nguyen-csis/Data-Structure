@@ -5,10 +5,11 @@ def sum(lNum):
     if len(lNum) == 1:
         return lNum[0]
     else:
-        sum1 = sum(lNum[1:])
-        returnValue = lNum[0] + sum1
-        return returnValue
-        # return lNum[0] + sum(lNum[1:])
+        return lNum[0] + sum(lNum[1:])
+        #******* same as **********
+        #sum1 = sum(lNum[1:])
+        #returnValue = lNum[0] + sum1
+        #return returnValue
 
 lNum = [0, 3, 4, 1, 2]
 print(sum(lNum))
