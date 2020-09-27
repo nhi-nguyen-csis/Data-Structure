@@ -17,6 +17,50 @@ def numGoodPairs(l):
                 returnList.append((i, j))
     return returnList
 
-
+#test
 nums = [1,2,3,1,1,3]
 print(numGoodPairs(nums))
+
+
+"""
+Given an array nums. We define a running sum of an
+array as runningSum[i] = sum(nums[0]…nums[i]).
+Return the running sum of nums.
+
+Example 1:
+Input: nums = [1,2,3,4]
+Output: [1,3,6,10]
+Explanation: Running sum is obtained as follows:
+[1, 1+2, 1+2+3, 1+2+3+4].
+"""
+def runningSum(num):
+    sumList =[]
+    s= num[0]
+    sumList.append(s)
+    for i in range(1, len(num)):
+        s += num[i]
+        sumList.append(s)
+    return sumList
+
+#test
+nums = [1,1,1,1,1]
+print(runningSum(nums))
+
+# Given a string, write a function to check if the string is
+# a palindrome. example: "My gym"
+# * coding interview book question
+def palindrome(s):
+    s = s.lower().join("")
+    print(s)
+    left = 0
+    right = len(s) - 1
+    isPalindrome = True
+    while (left < right) and isPalindrome:
+        if s[left] != s[right]:
+            isPalindrome = False
+        left += 1
+        right -= 1
+    return isPalindrome
+    
+#test
+print(palindrome("My gym"))
