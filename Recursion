@@ -1,0 +1,14 @@
+"""
+Write a Python program to calculate the sum of a list of numbers.
+"""
+def sum(lNum):
+    if len(lNum) == 1:
+        return lNum[0]
+    else:
+        sum1 = sum(lNum[1:])
+        returnValue = lNum[0] + sum1
+        return returnValue
+        # return lNum[0] + sum(lNum[1:])
+
+lNum = [0, 3, 4, 1, 2]
+print(sum(lNum))
