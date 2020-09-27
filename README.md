@@ -1,3 +1,3 @@
 # Data-Structure
 
-This repository will keeps all of the data structure in Python 3
+This repository will keeps everything related to data structure in Python 3
